@@ -102,7 +102,7 @@ function createCloseBtn(){
   }
 }
 
-async function myFetch(url, type, data) {
+function myFetch(url, type, data) {
  
     /* GET */
     if (type === "GET") {
