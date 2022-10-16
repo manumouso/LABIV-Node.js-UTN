@@ -1,0 +1,36 @@
+//extension: REST Client
+GET http://localhost:3000 HTTP/1.1
+
+###
+GET http://localhost:3000/api/todos HTTP/1.1
+
+###
+POST http://localhost:3000/api/todos HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":7,
+    "description":"Fix Tv",
+    "checked":false
+}
+
+###
+PUT http://localhost:3000/api/todos/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":2,
+    "description":"Pay bills",
+    "checked":true
+}
+
+###
+PATCH  http://localhost:3000/api/todos/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "checked":true
+}
+
+###
+DELETE   http://localhost:3000/api/todos/1 HTTP/1.1
